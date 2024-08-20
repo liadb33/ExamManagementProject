@@ -57,7 +57,7 @@ Our system is composed of the following key entities:
 
 ### Installation
 1. Clone the repository
-2. Set up the PostgreSQL database using the provided schema.
+2. Set up the PostgreSQL database using schooldb_new.
 3. Configure the JDBC connection in the `config.properties` file.
 4. Compile and run the Java application.
 
