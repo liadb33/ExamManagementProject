@@ -1,0 +1,5 @@
+Question 1: What is the square root of 144? Correct Answer: 4. 12
+Question 2: What is the sum of the first 10 prime numbers? Correct Answer: 3. 129
+Question 3: Prove the Pythagorean theorem. Correct Answer: 1. The square of the hypotenuse is equal to the sum of the squares of the other two sides.
+Question 4: What is the value of Pi to 5 decimal places? Correct Answer: 3. 3.14159
+Question 5: Solve the inequality 3x - 7 > 2. Correct Answer: 1. x > 3

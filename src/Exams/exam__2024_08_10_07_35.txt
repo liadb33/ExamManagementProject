@@ -1,0 +1,20 @@
+Exam: History 
+Answer the following questions:
+
+Question: In what year did the American Civil War begin? Type: Close
+  Answer: 1861
+  Answer: 1865
+  Answer: 1860
+  Answer: 1863
+Question: Explain the significance of the Magna Carta. Type: Open
+Question: Who was the ruler of France during the Napoleonic Wars? Type: Close
+  Answer: Napoleon Bonaparte
+  Answer: Louis XVI
+  Answer: Charles de Gaulle
+  Answer: Louis XVIII
+Question: Who was the Prime Minister of the UK during World War II? Type: Close
+  Answer: Neville Chamberlain
+  Answer: Harold Macmillan
+  Answer: Winston Churchill
+  Answer: Clement Attlee
+Question: What were the main causes of the Russian Revolution? Type: Open

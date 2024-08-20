@@ -1,0 +1,6 @@
+The solutions are:  
+QA: whats your name?
+- There is more than one correct answer:true
+- dakdasdaoda:true
+- akodasdado:true
+

@@ -1,0 +1,11 @@
+Question: What were the main causes of the Russian Revolution? Type: Open
+Question: Who was the ruler of France during the Napoleonic Wars? Type: Close
+  Answer: Napoleon Bonaparte
+  Answer: Louis XVI
+  Answer: Louis XVIII
+  Answer: Charles de Gaulle
+Question: In what year did the American Civil War begin? Type: Close
+  Answer: 1863
+  Answer: 1865
+  Answer: 1860
+  Answer: 1861

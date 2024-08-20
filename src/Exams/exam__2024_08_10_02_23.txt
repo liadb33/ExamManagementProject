@@ -1,0 +1,17 @@
+Question: Who was the ruler of France during the Napoleonic Wars? Level: Easy Type: Close
+  Answer: Louis XVIII
+  Answer: Charles de Gaulle
+  Answer: Louis XVI
+  Answer: Napoleon Bonaparte
+Question: What were the main causes of the Russian Revolution? Level: Hard Type: Open
+Question: Who was the Prime Minister of the UK during World War II? Level: Easy Type: Close
+  Answer: Neville Chamberlain
+  Answer: Winston Churchill
+  Answer: Harold Macmillan
+  Answer: Clement Attlee
+Question: Explain the significance of the Magna Carta. Level: Hard Type: Open
+Question: In what year did the American Civil War begin? Level: Medium Type: Close
+  Answer: 1865
+  Answer: 1861
+  Answer: 1860
+  Answer: 1863

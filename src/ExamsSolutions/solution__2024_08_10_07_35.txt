@@ -1,0 +1,5 @@
+Question: In what year did the American Civil War begin? Correct Answer: 1861
+Question: Explain the significance of the Magna Carta. Correct Answer: The Magna Carta limited the power of the monarchy and laid the foundation for modern democracy.
+Question: Who was the ruler of France during the Napoleonic Wars? Correct Answer: Napoleon Bonaparte
+Question: Who was the Prime Minister of the UK during World War II? Correct Answer: Winston Churchill
+Question: What were the main causes of the Russian Revolution? Correct Answer: Economic hardship, political repression, and military defeat.

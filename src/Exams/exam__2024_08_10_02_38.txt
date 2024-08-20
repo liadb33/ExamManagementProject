@@ -1,0 +1,11 @@
+Question: In what year did the American Civil War begin? Level: Medium Type: Close
+  Answer: 1860ISCORRECT: false
+  Answer: 1861ISCORRECT: true
+  Answer: 1865ISCORRECT: false
+  Answer: 1863ISCORRECT: false
+Question: What were the main causes of the Russian Revolution? Level: Hard Type: Open
+Question: Who was the Prime Minister of the UK during World War II? Level: Easy Type: Close
+  Answer: Winston ChurchillISCORRECT: true
+  Answer: Harold MacmillanISCORRECT: false
+  Answer: Clement AttleeISCORRECT: false
+  Answer: Neville ChamberlainISCORRECT: false

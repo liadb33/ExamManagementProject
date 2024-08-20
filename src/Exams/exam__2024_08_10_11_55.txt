@@ -1,0 +1,7 @@
+Question: Who was the Prime Minister of the UK during World War II? Level: Easy Type: Close
+  Answer: 12
+  Answer: 14
+  Answer: 10
+  Answer: 16
+Question: Explain the significance of the Magna Carta. Level: Hard Type: Open
+  Answer: x > 3

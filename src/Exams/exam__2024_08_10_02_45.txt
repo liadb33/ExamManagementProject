@@ -1,0 +1,19 @@
+Question: Solve the inequality 3x - 7 > 2. Level: Medium Type: Open
+  Answer: x > 3ISCORRECT: true
+Question: What is the square root of 144? Level: Easy Type: Close
+  Answer: 14ISCORRECT: false
+  Answer: 10ISCORRECT: false
+  Answer: 12ISCORRECT: true
+  Answer: 16ISCORRECT: false
+Question: What is the value of Pi to 5 decimal places? Level: Medium Type: Close
+  Answer: 3.14159ISCORRECT: true
+  Answer: 3.14158ISCORRECT: false
+  Answer: 3.14160ISCORRECT: false
+  Answer: 3.14155ISCORRECT: false
+Question: Prove the Pythagorean theorem. Level: Hard Type: Open
+  Answer: The square of the hypotenuse is equal to the sum of the squares of the other two sides.ISCORRECT: true
+Question: What is the sum of the first 10 prime numbers? Level: Hard Type: Close
+  Answer: 127ISCORRECT: false
+  Answer: 150ISCORRECT: false
+  Answer: 130ISCORRECT: false
+  Answer: 129ISCORRECT: true

@@ -1,0 +1,9 @@
+Answer the following questions: 
+QA: whats your name?
+- None of the answers is correct:false
+- There is more than one correct answer:true
+- sadadoadpad:false
+- dakdasdaoda:true
+- adasdasdsa:false
+- akodasdado:true
+

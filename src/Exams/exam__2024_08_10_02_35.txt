@@ -1,0 +1,6 @@
+Question: Explain the significance of the Magna Carta. Level: Hard Type: Open
+Question: Who was the Prime Minister of the UK during World War II? Level: Easy Type: Close
+  Answer: Harold MacmillanISCORRECT: false
+  Answer: Neville ChamberlainISCORRECT: false
+  Answer: Winston ChurchillISCORRECT: true
+  Answer: Clement AttleeISCORRECT: false

@@ -1,0 +1,7 @@
+Question: Who was the Prime Minister of the UK during World War II? Level: Easy Type: Close
+  Answer: Winston Churchill
+  Answer: Neville Chamberlain
+  Answer: Clement Attlee
+  Answer: Harold Macmillan
+Question: Explain the significance of the Magna Carta. Level: Hard Type: Open
+  Answer: The Magna Carta limited the power of the monarchy and laid the foundation for modern democracy.

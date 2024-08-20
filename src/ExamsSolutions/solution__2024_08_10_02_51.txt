@@ -1,0 +1,5 @@
+Question: Solve the inequality 3x - 7 > 2. Correct Answer: x > 3
+Question: What is the sum of the first 10 prime numbers? Correct Answer: 129
+Question: What is the square root of 144? Correct Answer: 12
+Question: What is the value of Pi to 5 decimal places? Correct Answer: 3.14159
+Question: Prove the Pythagorean theorem. Correct Answer: The square of the hypotenuse is equal to the sum of the squares of the other two sides.

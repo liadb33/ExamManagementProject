@@ -1,0 +1,30 @@
+Exam: math
+Answer the following questions:
+
+Question 1: What is the square root of 144? Type: Close
+
+  1. Answer: 16
+  2. Answer: 14
+  3. Answer: 10
+  4. Answer: 12
+
+Question 2: What is the sum of the first 10 prime numbers? Type: Close
+
+  1. Answer: 150
+  2. Answer: 130
+  3. Answer: 129
+  4. Answer: 127
+
+Question 3: Prove the Pythagorean theorem. Type: Open
+
+
+Question 4: What is the value of Pi to 5 decimal places? Type: Close
+
+  1. Answer: 3.14155
+  2. Answer: 3.14160
+  3. Answer: 3.14159
+  4. Answer: 3.14158
+
+Question 5: Solve the inequality 3x - 7 > 2. Type: Open
+
+

@@ -1,0 +1,2 @@
+Question: Solve the inequality 3x - 7 > 2. Correct Answer: x > 3
+Question: Prove the Pythagorean theorem. Correct Answer: The square of the hypotenuse is equal to the sum of the squares of the other two sides.

@@ -1,0 +1,12 @@
+Question: Prove the Pythagorean theorem. Level: Hard Type: Open
+Question: Solve the inequality 3x - 7 > 2. Level: Medium Type: Open
+Question: What is the square root of 144? Level: Easy Type: Close
+  Answer: 12
+  Answer: 10
+  Answer: 16
+  Answer: 14
+Question: What is the value of Pi to 5 decimal places? Level: Medium Type: Close
+  Answer: 3.14160
+  Answer: 3.14158
+  Answer: 3.14159
+  Answer: 3.14155
