@@ -1,0 +1,167 @@
+
+-- Creating Entities : 5 Entities -- 
+CREATE TABLE Stock (
+    StockID SERIAL PRIMARY KEY,
+    StockName varchar(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE Question(
+	QuestionID SERIAL PRIMARY KEY  NOT NULL,
+	QuestionName varchar(255) NOT NULL ,
+	QuestionLevel varchar(255) NOT NULL,
+	CONSTRAINT chk_QuestionLevel CHECK(QuestionLevel  IN ('Easy','Medium','Hard')),
+	kindOfQuestion varchar(255) NOT NULL,
+	CONSTRAINT chk_kindOfQuestion CHECK(kindOfQuestion  IN ('Open','Close')),
+	StockID int NOT NULL,
+    FOREIGN KEY (StockID) REFERENCES Stock(StockID) ON DELETE CASCADE,
+	CONSTRAINT uq_QuestionName_kindOfQuestion UNIQUE (QuestionName, kindOfQuestion)
+);
+
+CREATE TABLE Answer (
+    AnswerID SERIAL PRIMARY KEY NOT NULL,
+    AnswerName VARCHAR(255),
+    IsCorrect BOOLEAN,
+    QuestionID INT,
+    FOREIGN KEY (QuestionID) REFERENCES Question(QuestionID) ON DELETE CASCADE,
+    CONSTRAINT uq_AnswerName_IsCorrect_QuestionID UNIQUE (AnswerName, IsCorrect, QuestionID)
+);
+
+CREATE TABLE Exam (
+    ExamID SERIAL PRIMARY KEY NOT NULL,
+    Subject varchar(255) UNIQUE
+);
+
+CREATE TABLE ExamQuestion (
+    ExamQuestionID SERIAL PRIMARY KEY,
+    ExamQuestionName VARCHAR(255) NOT NULL,
+    ExamQuestionLevel VARCHAR(255) NOT NULL,
+    ExamkindOfQuestion VARCHAR(255) NOT NULL,
+    ExamID INT NOT NULL,
+    FOREIGN KEY (ExamID) REFERENCES Exam(ExamID)
+);
+
+CREATE TABLE ExamAnswer (
+    ExamAnswerID SERIAL PRIMARY KEY,
+    ExamQuestionID INT NOT NULL,
+	ExamAnswerName VARCHAR(255),
+	ExamIsCorrect BOOLEAN,
+    FOREIGN KEY (ExamQuestionID) REFERENCES ExamQuestion(ExamQuestionID)
+);
+
+-- Filling database with data --
+INSERT INTO Stock (StockName) VALUES 
+('Math'),
+('English'),
+('History');
+
+INSERT INTO Question (QuestionName, QuestionLevel, kindOfQuestion, StockID) VALUES
+-- Math Questions
+('What is the square root of 144?', 'Easy', 'Close', 1),
+('Solve the inequality 3x - 7 > 2.', 'Medium', 'Open', 1),
+('What is the value of Pi to 5 decimal places?', 'Medium', 'Close', 1),
+('Prove the Pythagorean theorem.', 'Hard', 'Open', 1),
+('What is the sum of the first 10 prime numbers?', 'Hard', 'Close', 1),
+
+-- English Questions
+('What is the antonym of "brave"?', 'Easy', 'Close', 2),
+('Identify the subject and predicate in the sentence: "The dog barked loudly."', 'Medium', 'Open', 2),
+('What literary device is used in the phrase "The wind whispered through the trees"?', 'Medium', 'Close', 2),
+('Analyze the theme of ambition in Shakespeare''s Macbeth.', 'Hard', 'Open', 2),
+(' Correct the grammatical error in the sentence: "He don''t know the answer."', 'Medium', 'Close', 2),
+
+-- History Questions
+('Who was the Prime Minister of the UK during World War II?', 'Easy', 'Close', 3),
+('Explain the significance of the Magna Carta.', 'Hard', 'Open', 3),
+('In what year did the American Civil War begin?', 'Medium', 'Close', 3),
+('What were the main causes of the Russian Revolution?', 'Hard', 'Open', 3),
+('Who was the ruler of France during the Napoleonic Wars?', 'Easy', 'Close', 3);
+
+-- Math Question 1: What is the square root of 144?
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('12', TRUE, 1),
+('14', FALSE, 1),
+('10', FALSE, 1),
+('16', FALSE, 1);
+
+-- Math Question 2: Solve the inequality 3x - 7 > 2.
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('x > 3', TRUE, 2);
+
+-- Math Question 3: What is the value of Pi to 5 decimal places?
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('3.14159', TRUE, 3),
+('3.14158', FALSE, 3),
+('3.14160', FALSE, 3),
+('3.14155', FALSE, 3);
+
+-- Math Question 4: Prove the Pythagorean theorem.
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('The square of the hypotenuse is equal to the sum of the squares of the other two sides.', TRUE, 4);
+
+-- Math Question 5: What is the sum of the first 10 prime numbers?
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('150', FALSE, 5),
+('130', FALSE, 5),
+('129', TRUE, 5),
+('127', FALSE, 5);
+
+-- English Question 1: What is the antonym of "brave"?
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('Cowardly', TRUE, 6),
+('Bold', FALSE, 6),
+('Fearless', FALSE, 6),
+('Heroic', FALSE, 6);
+
+-- English Question 2: Identify the subject and predicate in the sentence: "The dog barked loudly."
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('Subject: The dog, Predicate: barked loudly', TRUE, 7),
+('Subject: The dog, Predicate: loudly barked', FALSE, 7),
+('Subject: The dog loudly, Predicate: barked', FALSE, 7),
+('Subject: Barked, Predicate: The dog loudly', FALSE, 7);
+
+-- English Question 3: What literary device is used in the phrase "The wind whispered through the trees"?
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('Personification', TRUE, 8),
+('Metaphor', FALSE, 8),
+('Simile', FALSE, 8),
+('Alliteration', FALSE, 8);
+
+-- English Question 4: Analyze the theme of ambition in Shakespeare's "Macbeth".
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('Ambition leads to downfall and chaos.', TRUE, 9);
+
+-- English Question 5: Correct the grammatical error in the sentence: "He don\'t know the answer."
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('He doesn''t know the answer.', TRUE, 10),
+('He isn''t know the answer.', FALSE, 10),
+('He not know the answer.', FALSE, 10),
+('He doesn''t knows the answer.', FALSE, 10);
+
+-- History Question 1: Who was the Prime Minister of the UK during World War II?
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('Winston Churchill', TRUE, 11),
+('Neville Chamberlain', FALSE, 11),
+('Clement Attlee', FALSE, 11),
+('Harold Macmillan', FALSE, 11);
+
+-- History Question 2: Explain the significance of the Magna Carta.
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('The Magna Carta limited the power of the monarchy and laid the foundation for modern democracy.', TRUE, 12);
+
+-- History Question 3: In what year did the American Civil War begin?
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('1861', TRUE, 13),
+('1865', FALSE, 13),
+('1860', FALSE, 13),
+('1863', FALSE, 13);
+
+-- History Question 4: What were the main causes of the Russian Revolution?
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('Economic hardship, political repression, and military defeat.', TRUE, 14);
+
+-- History Question 5: Who was the ruler of France during the Napoleonic Wars?
+INSERT INTO Answer (AnswerName, IsCorrect, QuestionID) VALUES
+('Napoleon Bonaparte', TRUE, 15),
+('Louis XVI', FALSE, 15),
+('Charles de Gaulle', FALSE, 15),
+('Louis XVIII', FALSE, 15);
