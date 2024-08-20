@@ -56,8 +56,7 @@ Our system is composed of the following key entities:
 - pgAdmin 4
 
 ### Installation
-1. Clone the repository: git clone https://github.com/yourusername/exam-management-system.git
-
+1. Clone the repository
 2. Set up the PostgreSQL database using the provided schema.
 3. Configure the JDBC connection in the `config.properties` file.
 4. Compile and run the Java application.
