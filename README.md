@@ -61,8 +61,3 @@ Our system is composed of the following key entities:
 3. Configure the JDBC connection in the `config.properties` file.
 4. Compile and run the Java application.
 
-## 💡 Usage
-
-1. **Adding Questions**: Navigate to the "Question Management" section to add new questions to the system.
-2. **Creating Exams**: Use the "Exam Creation" module to either manually select questions or generate exams automatically.
-3. **Generating Exam Files**: Once an exam is created, use the "File Generation" feature to produce printable or shareable exam documents.
