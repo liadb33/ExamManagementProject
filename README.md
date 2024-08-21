@@ -4,7 +4,7 @@
 
 ## 📚 Description
 
-The Exam Management System is an innovative tool designed to simplify the process of creating and managing exams. Our system offers a user-friendly interface for educators and administrators to efficiently handle various aspects of exam creation and management.
+The Exam Management System is an innovative tool designed to simplify the process of creating and managing exams. Offers a user-friendly interface for educators and administrators to efficiently handle various aspects of exam creation and management.
 
 ### 🌟 Key Features
 
